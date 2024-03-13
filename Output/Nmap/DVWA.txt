@@ -1,0 +1,93 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-13 17:19 -03
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 17:19
+Completed NSE at 17:19, 0.00s elapsed
+Initiating NSE at 17:19
+Completed NSE at 17:19, 0.00s elapsed
+Initiating NSE at 17:19
+Completed NSE at 17:19, 0.00s elapsed
+Initiating Ping Scan at 17:19
+Scanning localhost (127.0.0.1) [2 ports]
+Completed Ping Scan at 17:19, 0.00s elapsed (1 total hosts)
+Initiating Connect Scan at 17:19
+Scanning localhost (127.0.0.1) [1000 ports]
+Discovered open port 80/tcp on 127.0.0.1
+Discovered open port 3306/tcp on 127.0.0.1
+Completed Connect Scan at 17:19, 0.01s elapsed (1000 total ports)
+Initiating Service scan at 17:19
+Scanning 2 services on localhost (127.0.0.1)
+Completed Service scan at 17:20, 16.04s elapsed (2 services on 1 host)
+NSE: Script scanning 127.0.0.1.
+Initiating NSE at 17:20
+Completed NSE at 17:20, 0.14s elapsed
+Initiating NSE at 17:20
+Completed NSE at 17:20, 0.02s elapsed
+Initiating NSE at 17:20
+Completed NSE at 17:20, 0.00s elapsed
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.000076s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.58 ((Unix) PHP/8.3.3)
+| http-methods: 
+|   Supported Methods: GET POST OPTIONS HEAD TRACE
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.4.58 (Unix) PHP/8.3.3
+|_http-title: Index of /
+3306/tcp open  mysql?
+| fingerprint-strings: 
+|   GenericLines: 
+|     11.3.2-MariaDB
+|     SMg?Cq3I
+|     RB3uwuf}bRS,
+|     mysql_native_password
+|     #HY000Proxy header is not accepted from 127.0.0.1
+|   LDAPBindReq: 
+|     11.3.2-MariaDB
+|     +miDYrQ|
+|     Al|J<.m`wV+o
+|     mysql_native_password
+|   NULL: 
+|     11.3.2-MariaDB
+|     SMg?Cq3I
+|     RB3uwuf}bRS,
+|     mysql_native_password
+|   afp: 
+|     11.3.2-MariaDB
+|     kHgN/>,`
+|     }wG/Q/5ZE,K
+|_    mysql_native_password
+| mysql-info: 
+|   Protocol: 10
+|   Version: 11.3.2-MariaDB
+|   Thread ID: 333
+|   Capabilities flags: 63486
+|   Some Capabilities: Support41Auth, ODBCClient, SupportsTransactions, InteractiveClient, SupportsLoadDataLocal, Speaks41ProtocolOld, SupportsCompression, Speaks41ProtocolNew, DontAllowDatabaseTableColumn, IgnoreSigpipes, IgnoreSpaceBeforeParenthesis, ConnectWithDatabase, FoundRows, LongColumnFlag, SupportsMultipleStatments, SupportsMultipleResults, SupportsAuthPlugins
+|   Status: Autocommit
+|   Salt: FdGt5GGkgD[|".b%,N$h
+|_  Auth Plugin Name: mysql_native_password
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.94%I=7%D=3/13%Time=65F20A66%P=x86_64-pc-linux-gnu%r(NU
+SF:LL,56,"R\0\0\0\n11\.3\.2-MariaDB\0/\x01\0\0SMg\?Cq3I\0\xfe\xf7\xe0\x02\
+SF:0\xff\x81\x15\0\0\0\0\0\0\x1d\0\0\0RB3uwuf}bRS,\0mysql_native_password\
+SF:0")%r(GenericLines,8E,"R\0\0\0\n11\.3\.2-MariaDB\0/\x01\0\0SMg\?Cq3I\0\
+SF:xfe\xf7\xe0\x02\0\xff\x81\x15\0\0\0\0\0\0\x1d\0\0\0RB3uwuf}bRS,\0mysql_
+SF:native_password\x004\0\0\x01\xffj\x04#HY000Proxy\x20header\x20is\x20not
+SF:\x20accepted\x20from\x20127\.0\.0\.1")%r(LDAPBindReq,56,"R\0\0\0\n11\.3
+SF:\.2-MariaDB\0@\x01\0\0\+miDYrQ\|\0\xfe\xf7\xe0\x02\0\xff\x81\x15\0\0\0\
+SF:0\0\0\x1d\0\0\0Al\|J<\.m`wV\+o\0mysql_native_password\0")%r(afp,56,"R\0
+SF:\0\0\n11\.3\.2-MariaDB\0J\x01\0\0kHgN/>,`\0\xfe\xf7\xe0\x02\0\xff\x81\x
+SF:15\0\0\0\0\0\0\x1d\0\0\0}w\\G/Q/5ZE,K\0mysql_native_password\0");
+
+NSE: Script Post-scanning.
+Initiating NSE at 17:20
+Completed NSE at 17:20, 0.00s elapsed
+Initiating NSE at 17:20
+Completed NSE at 17:20, 0.00s elapsed
+Initiating NSE at 17:20
+Completed NSE at 17:20, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 16.38 seconds
