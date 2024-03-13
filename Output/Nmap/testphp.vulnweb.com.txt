@@ -1,0 +1,45 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-13 18:02 -03
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating Ping Scan at 18:02
+Scanning testphp.vulnweb.com (44.228.249.3) [2 ports]
+Completed Ping Scan at 18:02, 0.22s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:02
+Completed Parallel DNS resolution of 1 host. at 18:02, 0.35s elapsed
+Initiating Connect Scan at 18:02
+Scanning testphp.vulnweb.com (44.228.249.3) [1000 ports]
+Discovered open port 80/tcp on 44.228.249.3
+Completed Connect Scan at 18:02, 18.77s elapsed (1000 total ports)
+Initiating Service scan at 18:02
+Scanning 1 service on testphp.vulnweb.com (44.228.249.3)
+Completed Service scan at 18:02, 5.01s elapsed (1 service on 1 host)
+NSE: Script scanning 44.228.249.3.
+Initiating NSE at 18:02
+Completed NSE at 18:03, 17.61s elapsed
+Initiating NSE at 18:03
+Completed NSE at 18:03, 2.01s elapsed
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+Nmap scan report for testphp.vulnweb.com (44.228.249.3)
+Host is up (0.23s latency).
+rDNS record for 44.228.249.3: ec2-44-228-249-3.us-west-2.compute.amazonaws.com
+Not shown: 999 filtered tcp ports (no-response)
+PORT   STATE SERVICE    VERSION
+80/tcp open  tcpwrapped
+
+NSE: Script Post-scanning.
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+Initiating NSE at 18:03
+Completed NSE at 18:03, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 44.46 seconds

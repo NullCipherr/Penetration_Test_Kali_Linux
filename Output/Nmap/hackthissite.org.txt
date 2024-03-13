@@ -1,0 +1,61 @@
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-03-13 18:00 -03
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 18:00
+Completed NSE at 18:00, 0.00s elapsed
+Initiating NSE at 18:00
+Completed NSE at 18:00, 0.00s elapsed
+Initiating NSE at 18:00
+Completed NSE at 18:00, 0.00s elapsed
+Initiating Ping Scan at 18:00
+Scanning hackthissite.org (137.74.187.101) [2 ports]
+Completed Ping Scan at 18:00, 0.27s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 18:00
+Completed Parallel DNS resolution of 1 host. at 18:00, 0.25s elapsed
+Initiating Connect Scan at 18:00
+Scanning hackthissite.org (137.74.187.101) [1000 ports]
+Discovered open port 80/tcp on 137.74.187.101
+Discovered open port 443/tcp on 137.74.187.101
+Completed Connect Scan at 18:01, 50.74s elapsed (1000 total ports)
+Initiating Service scan at 18:01
+Scanning 2 services on hackthissite.org (137.74.187.101)
+Completed Service scan at 18:01, 1.70s elapsed (2 services on 1 host)
+NSE: Script scanning 137.74.187.101.
+Initiating NSE at 18:01
+Completed NSE at 18:02, 70.78s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 3.36s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Nmap scan report for hackthissite.org (137.74.187.101)
+Host is up (0.23s latency).
+Other addresses for hackthissite.org (not scanned): 137.74.187.102 137.74.187.103 137.74.187.104 137.74.187.100 2001:41d0:8:ccd8:137:74:187:100 2001:41d0:8:ccd8:137:74:187:101 2001:41d0:8:ccd8:137:74:187:102 2001:41d0:8:ccd8:137:74:187:104 2001:41d0:8:ccd8:137:74:187:103
+Not shown: 994 filtered tcp ports (no-response), 4 filtered tcp ports (host-unreach)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  tcpwrapped
+443/tcp open  tcpwrapped
+|_http-title: Hack This Site
+| ssl-cert: Subject: commonName=hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion
+| Subject Alternative Name: DNS:hackthissite.org, DNS:www.hackthissite.org, DNS:hackthisjogneh42n5o7gbzrewxee3vyu6ex37ukyvdw6jm66npakiyd.onion
+| Issuer: commonName=HARICA DV TLS RSA/organizationName=Hellenic Academic and Research Institutions CA/countryName=GR
+| Public Key type: rsa
+| Public Key bits: 4096
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-04-03T06:47:49
+| Not valid after:  2024-04-02T06:47:49
+| MD5:   714c:266a:9a30:f812:b5c2:caab:8f5e:2a63
+|_SHA-1: 118e:e2e8:d1e7:33e5:7f25:8802:8bef:d47f:1bab:2816
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: HackThisSite
+
+NSE: Script Post-scanning.
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Initiating NSE at 18:02
+Completed NSE at 18:02, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 127.76 seconds
